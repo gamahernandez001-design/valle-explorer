@@ -1,0 +1,22 @@
+{
+  "nav": {
+    "home": "Home",
+    "explore": "Explore",
+    "itineraries": "Itineraries",
+    "forBusinesses": "For Businesses"
+  },
+  "common": {
+    "bookNow": "Book Now",
+    "learnMore": "Learn More",
+    "viewOnMap": "View on Map",
+    "contact": "Contact",
+    "reserve": "Reserve",
+    "visitWebsite": "Visit Website",
+    "callNow": "Call Now",
+    "writeOnWhatsapp": "Write on WhatsApp"
+  },
+  "meta": {
+    "defaultTitle": "Ruta del Vino — Wine Country of Ensenada",
+    "defaultDescription": "Discover wineries, restaurants, hotels, and experiences in the Valle de Guadalupe, Baja California."
+  }
+}

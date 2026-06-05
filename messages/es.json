@@ -1,0 +1,22 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "explore": "Explorar",
+    "itineraries": "Itinerarios",
+    "forBusinesses": "Para Negocios"
+  },
+  "common": {
+    "bookNow": "Reservar Ahora",
+    "learnMore": "Saber Más",
+    "viewOnMap": "Ver en el Mapa",
+    "contact": "Contacto",
+    "reserve": "Reservar",
+    "visitWebsite": "Visitar Sitio Web",
+    "callNow": "Llamar Ahora",
+    "writeOnWhatsapp": "Escribir por WhatsApp"
+  },
+  "meta": {
+    "defaultTitle": "Ruta del Vino — Región Vitivinícola de Ensenada",
+    "defaultDescription": "Descubre vinícolas, restaurantes, hoteles y experiencias en el Valle de Guadalupe, Baja California."
+  }
+}
