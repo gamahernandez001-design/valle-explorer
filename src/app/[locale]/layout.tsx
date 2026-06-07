@@ -1,32 +1,30 @@
-import type { ReactNode } from 'react';
-import { NextIntlClientProvider } from 'next-intl';
-import { getMessages } from 'next-intl/server';
-import { notFound } from 'next/navigation';
+import type { Metadata } from 'next'
+import { NextIntlClientProvider } from 'next-intl'
+import { getMessages } from 'next-intl/server'
+import { playfair, inter } from '@/config/fonts'
+//import '../globals.css'
 
-import { siteConfig } from '@/config/site';
-
-type LocaleLayoutProps = {
-  children: ReactNode;
-  params: { locale: string };
-};
+export const metadata: Metadata = {
+  title: 'Ruta del Vino — Valle de Guadalupe',
+  description: 'Discover the best wineries, restaurants and experiences in Valle de Guadalupe, Ensenada.',
+}
 
 export default async function LocaleLayout({
   children,
   params: { locale },
-}: LocaleLayoutProps) {
-  if (!siteConfig.locales.includes(locale as (typeof siteConfig.locales)[number])) {
-    notFound();
-  }
-
-  const messages = await getMessages();
+}: {
+  children: React.ReactNode
+  params: { locale: string }
+}) {
+  const messages = await getMessages()
 
   return (
-    <html lang={locale}>
-      <body>
+    <html lang={locale} className={`${playfair.variable} ${inter.variable}`}>
+      <body className="font-body bg-[#FAF7F2] text-stone-800 antialiased">
         <NextIntlClientProvider messages={messages}>
           {children}
         </NextIntlClientProvider>
       </body>
     </html>
-  );
+  )
 }
