@@ -1,0 +1,61 @@
+import type { Itinerary } from '@/types'
+
+export const itineraries: Itinerary[] = [
+  {
+    id: '1',
+    slug: 'romantic-escape',
+    title_en: 'Romantic Escape',
+    title_es: 'Escapada Romántica',
+    description_en: 'A perfect day for couples. Start with a private tasting at a boutique winery, enjoy a world-class lunch, and end with a sunset at an eco-resort overlooking the valley.',
+    description_es: 'Un día perfecto para parejas. Comienza con una cata privada, disfruta un almuerzo de clase mundial y termina con un atardecer en un eco-resort.',
+    type: 'romantic',
+    duration_hours: 8,
+    place_ids: ['1', '2', '3'],
+  },
+  {
+    id: '2',
+    slug: 'full-day-explorer',
+    title_en: 'Full Day Explorer',
+    title_es: 'Explorador de Día Completo',
+    description_en: 'The ultimate Valle de Guadalupe experience. Visit three wineries, enjoy lunch at a renowned restaurant, and discover the diversity of Baja wine country in one unforgettable day.',
+    description_es: 'La experiencia definitiva del Valle de Guadalupe. Visita tres bodegas, almuerza en un restaurante reconocido y descubre la diversidad del vino bajacaliforniano.',
+    type: 'one_day',
+    duration_hours: 10,
+    place_ids: ['1', '4', '5', '2'],
+  },
+  {
+    id: '3',
+    slug: 'first-timers-guide',
+    title_en: "First Timer's Guide",
+    title_es: 'Guía para Primerizos',
+    description_en: "New to Valle de Guadalupe? This itinerary covers the essentials. A guided tour, the valley's most iconic winery, and a casual lunch — the perfect introduction to Baja wine country.",
+    description_es: '¿Primera vez en el Valle de Guadalupe? Este itinerario cubre lo esencial. Un tour guiado, la bodega más icónica del valle y un almuerzo casual.',
+    type: 'first_time',
+    duration_hours: 6,
+    place_ids: ['7', '4', '5'],
+  },
+  {
+    id: '4',
+    slug: 'family-day',
+    title_en: 'Family Day',
+    title_es: 'Día Familiar',
+    description_en: 'A family-friendly day in wine country. Enjoy outdoor spaces, pet-friendly venues, and activities the whole family will love while the adults sample world-class wines.',
+    description_es: 'Un día familiar en el país del vino. Espacios al aire libre, lugares pet-friendly y actividades para toda la familia.',
+    type: 'family',
+    duration_hours: 7,
+    place_ids: ['7', '6', '4'],
+  },
+  {
+    id: '5',
+    slug: 'premium-experience',
+    title_en: 'Premium Experience',
+    title_es: 'Experiencia Premium',
+    description_en: 'For those who want only the best. An exclusive day featuring the valley\'s most celebrated restaurants, luxury accommodations, and a spa treatment to complete the experience.',
+    description_es: 'Para quienes quieren lo mejor. Un día exclusivo con los restaurantes más celebrados del valle, alojamiento de lujo y tratamiento de spa.',
+    type: 'premium',
+    duration_hours: 12,
+    place_ids: ['1', '2', '3', '8'],
+  },
+]
+
+export const getItineraryBySlug = (slug: string) => itineraries.find(i => i.slug === slug)

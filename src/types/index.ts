@@ -27,7 +27,7 @@ export type Place = {
   whatsapp: string;
   website: string;
   instagram: string;
-  opentable_url: string;
+  opentable_url: string | null
   hours: Record<string, string>;
   price_range: 1 | 2 | 3 | 4;
   images: string[];
