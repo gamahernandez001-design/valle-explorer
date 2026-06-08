@@ -1,9 +1,17 @@
+import Hero from '@/components/sections/Hero'
+import Categories from '@/components/sections/Categories'
+import FeaturedPlaces from '@/components/sections/FeaturedPlaces'
+import ItinerariesSection from '@/components/sections/Itineraries'
+import ForBusinessesBanner from '@/components/sections/ForBusinessesBanner'
+
 export default function HomePage() {
   return (
-    <main className="min-h-screen">
-      <div className="bg-wine-500 text-white p-8">
-        Ruta del Vino — Design System OK
-      </div>
-    </main>
+    <>
+      <Hero />
+      <Categories />
+      <FeaturedPlaces />
+      <ItinerariesSection />
+      <ForBusinessesBanner />
+    </>
   )
 }
