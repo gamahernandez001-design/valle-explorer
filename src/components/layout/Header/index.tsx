@@ -22,9 +22,7 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? 'bg-white/95 backdrop-blur-sm shadow-sm' : 'bg-transparent'
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/95 backdrop-blur-sm shadow-sm`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
@@ -32,7 +30,7 @@ export default function Header() {
           {/* Logo */}
           <Link href="/en" className="flex flex-col">
             <span className={`font-heading font-bold text-xl leading-tight transition-colors ${
-              scrolled ? 'text-wine-900' : 'text-white'
+              'text-wine-900'
             }`}>
               Ruta del Vino
             </span>
@@ -50,7 +48,7 @@ export default function Header() {
                 key={link.href}
                 href={`/en${link.href}`}
                 className={`text-sm font-medium transition-colors hover:text-gold-500 ${
-                  scrolled ? 'text-stone-800' : 'text-white'
+                  'text-stone-800'
                 }`}
               >
                 {link.label}
@@ -62,11 +60,11 @@ export default function Header() {
           <div className="hidden lg:flex items-center gap-4">
             {/* Language Selector */}
             <div className="flex items-center gap-1 text-sm font-medium">
-              <button className={`transition-colors hover:text-gold-500 ${scrolled ? 'text-wine-500' : 'text-white'}`}>
+              <button className={`transition-colors hover:text-gold-500 ${scrolled ? 'text-wine-500' : 'text-wine-500'}`}>
                 EN
               </button>
-              <span className={scrolled ? 'text-stone-300' : 'text-white/50'}>|</span>
-              <button className={`transition-colors hover:text-gold-500 ${scrolled ? 'text-stone-400' : 'text-white/70'}`}>
+              <span className='text-stone-300'>|</span>
+              <button className={`transition-colors hover:text-gold-500 ${scrolled ? 'text-stone-400' : 'text-stone-400'}`}>
                 ES
               </button>
             </div>
