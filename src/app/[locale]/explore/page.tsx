@@ -1,3 +1,4 @@
+import type { Metadata } from 'next'
 import { Suspense } from 'react'
 import PlaceFilters from '@/components/places/PlaceFilters'
 import PlaceCard from '@/components/places/PlaceCard'
@@ -25,6 +26,16 @@ function filterPlaces(allPlaces: Place[], category?: string, tags?: string) {
   }
 
   return filtered
+}
+
+export const metadata: Metadata = {
+  title: 'Explore Wineries & Restaurants — Valle de Guadalupe',
+  description: 'Browse all wineries, restaurants, hotels, tours and spas in Valle de Guadalupe. Filter by category, features and price range.',
+  openGraph: {
+    title: 'Explore Valle de Guadalupe — Ruta del Vino',
+    description: 'Find the perfect winery, restaurant or experience in Baja California wine country.',
+    type: 'website',
+  },
 }
 
 export default function ExplorePage({ searchParams }: ExplorePageProps) {
