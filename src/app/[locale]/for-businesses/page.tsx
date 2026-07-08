@@ -162,7 +162,7 @@ export default function ForBusinessesPage() {
             <h2 className="font-heading font-bold text-3xl text-stone-900">
               Simple, transparent pricing
             </h2>
-            <p className="text-stone-500 mt-2">Start free, grow when you're ready</p>
+            <p className="text-stone-500 mt-2">Start free, grow when you&apos;re ready</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {plans.map((plan) => (
@@ -219,7 +219,7 @@ export default function ForBusinessesPage() {
               List your business
             </h2>
             <p className="text-stone-500 mt-2">
-              Fill out the form and we'll be in touch within 24 hours
+              Fill out the form and We&apos;ll be in touch within 24 hours
             </p>
           </div>
 
